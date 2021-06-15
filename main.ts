@@ -1,4 +1,6 @@
 basic.forever(function () {
+    led.enable(false)
+    music.setBuiltInSpeakerEnabled(false)
     if (pins.digitalReadPin(DigitalPin.P5) == 1) {
         music.ringTone(262)
     } else if (pins.digitalReadPin(DigitalPin.P8) == 1) {
